@@ -8,3 +8,15 @@
     // background-color: $dark-purple;
 }
 
+.flex{
+    display: flex;
+    &-j-c{
+        justify-content: center;
+    }
+    &-a-c{
+        align-items: center;
+    }
+    &-f-d-c{
+        flex-direction: column;
+    }
+}
