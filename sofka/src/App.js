@@ -1,16 +1,33 @@
-import React from 'react';
-import './App.css';
+// class
 
-const App = (props) =>{
-  const {nave, combustible, agenteOxidante, actividad} = props;
-  return(
-    <div>
-      <h1>{nave}</h1>
-      <p>Combustible = {combustible}</p>
-      <p>Agente Oxidante = {agenteOxidante}</p>
-      <p>Actividad = {actividad}</p>
-    </div>
-  )
+export class Nave {
+    constructor(nombre, combustible, actividad, tipoDeNave){
+        this.nombre = nombre;
+        this.combustible = combustible;
+        this.actividad = actividad; // tiempo en funcionamiento
+        this.tipoDeNave = tipoDeNave;
+    }
+}
+  
+class VehiculoLanzadero extends Nave {
+    constructor(nombre, combustible, actividad, tipoDeNave, empuje, peso, transportePeso){
+        super(nombre, combustible, actividad, tipoDeNave)
+        this.empuje = empuje;
+        this.peso = peso;
+        this.transportePeso = transportePeso;
+    }
 }
 
-export default App;
+class NaveNoTripulada extends Nave {
+    constructor(nombre, combustible, actividad, tipoDeNave, zona){
+        super(nombre, combustible, actividad, tipoDeNave)
+        this.zona = zona;
+    }
+}
+
+class NaveTripulada extends Nave {
+    constructor(nombre, combustible, actividad, tipoDeNave, mision){
+        super(nombre, combustible, actividad, tipoDeNave)
+        this.mision = mision;
+    }
+}

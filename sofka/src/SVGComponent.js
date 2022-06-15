@@ -7,12 +7,12 @@ const SVGComponent = (props) => (
     x={0}
     y={0}
     viewBox="0 0 100 100"
-    className="SVG"
     style={{
       enableBackground: "new 0 0 100 100",
     }}
     xmlSpace="preserve"
     {...props}
+    className="SVG"
   >
     <style>
       {

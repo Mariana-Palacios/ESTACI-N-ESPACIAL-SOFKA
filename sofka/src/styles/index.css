@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +40,9 @@
 }
 
 .background {
+  width: 80%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  right: 0px;
 }
 
 .btn {
@@ -52,8 +56,10 @@
 }
 
 .SVG {
-  height: 50px;
-  width: 50px;
+  position: absolute;
+  left: 0;
+  height: 30%;
+  width: 30%;
   margin: 1.25rem 0px;
 }
 
@@ -62,5 +68,99 @@
     width: 50%;
     height: auto;
   }
+}
+
+#tierra {
+  -webkit-animation: rotate 20s infinite linear;
+          animation: rotate 20s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#jupiter {
+  -webkit-animation: rotate 20s infinite linear, flote 20s infinite linear;
+          animation: rotate 20s infinite linear, flote 20s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes flote {
+  from {
+    -webkit-transform: translateY(0), rotate(0deg);
+            transform: translateY(0), rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(20px), rotate(180deg);
+            transform: translateY(20px), rotate(180deg);
+  }
+  to {
+    -webkit-transform: translateY(0), rotate(360deg);
+            transform: translateY(0), rotate(360deg);
+  }
+}
+
+@keyframes flote {
+  from {
+    -webkit-transform: translateY(0), rotate(0deg);
+            transform: translateY(0), rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(20px), rotate(180deg);
+            transform: translateY(20px), rotate(180deg);
+  }
+  to {
+    -webkit-transform: translateY(0), rotate(360deg);
+            transform: translateY(0), rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.nave {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.nave__title, .nave span {
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 /*# sourceMappingURL=index.css.map */
