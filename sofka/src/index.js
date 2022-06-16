@@ -37,7 +37,10 @@ function Index() {
       <SVGComponent />
       <h1><FontAwesomeIcon icon={solid('gear')} />Creador de naves<FontAwesomeIcon icon={solid('rocket')} /></h1>
       <NaveInput nuevaNave={nuevaNave}/>
-      <input type='text' placeholder='busqueda' value={search} name='busqueda' onChange={(e)=>setSearch(e.target.value)}/>
+      <input type='text' placeholder='busqueda' value={search} name='busqueda' onChange={(e)=>setSearch(e.target.value.toLowerCase())}/>
+      {
+        console.log(search)
+      }
       <div className='flex'>
         {
           listaNaves.filter(function(e){

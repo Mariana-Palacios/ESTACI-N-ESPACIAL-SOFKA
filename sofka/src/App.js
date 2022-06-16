@@ -15,7 +15,6 @@ export class Nave {
         return alert('aterrizaje');
     }
 }
-
 // class VehiculoLanzadero extends Nave {
 //     constructor(nombre, combustible, actividad, tipoDeNave, pais, empuje, peso, transportePeso){
 //         super(nombre, combustible, actividad, tipoDeNave, pais)

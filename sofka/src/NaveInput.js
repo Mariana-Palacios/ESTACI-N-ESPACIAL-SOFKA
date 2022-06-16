@@ -11,8 +11,6 @@ const NaveInput=(props)=>{
         Pais:'',
     })
 
-    
-
     const [validacion, setValidacion] = useState('')
 
     const getFormulario = (e) =>{
@@ -89,6 +87,7 @@ const NaveInput=(props)=>{
     return(
         <div>
             <form className='NaveInput flex flex-f-d-c' onSubmit={submit}>
+                <p>Ingrese valores</p>
                 <input type='text' placeholder='Nave' value={input.Nave} name='Nave' className='NaveMaker__input' onChange={getFormulario}/>
                 <input type='text' placeholder='Combustible' value={input.Combustible} name='Combustible' className='NaveMaker__input' onChange={getFormulario}/>
                 <input type='text' placeholder='Actividad' value={input.Actividad} name='Actividad' className='NaveMaker__input' onChange={getFormulario}/>
