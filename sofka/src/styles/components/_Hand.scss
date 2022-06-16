@@ -1,0 +1,21 @@
+@keyframes hand { 
+    0% { 
+        transform: rotate(0deg); 
+    }
+    35%{ 
+        transform: rotate(35deg); 
+    }
+    50% { 
+        transform: rotate(0deg); 
+    }
+    75%{ 
+        transform: rotate(-35deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+
+.hand{
+    animation: hand 4s infinite;
+}

@@ -2,8 +2,6 @@ import React,{ useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 
-// const {nave, combustible, actividad , tipoDeNave, pais} = props; 
-
 const NaveInput=(props)=>{
     const [input, setInput] = useState({
         Nave:'',
@@ -90,12 +88,12 @@ const NaveInput=(props)=>{
 
     return(
         <div>
-            <form className='NaveMaker' onSubmit={submit}>
+            <form className='NaveInput flex flex-f-d-c' onSubmit={submit}>
                 <input type='text' placeholder='Nave' value={input.Nave} name='Nave' className='NaveMaker__input' onChange={getFormulario}/>
-                <input type='text' placeholder='Nave' value={input.Combustible} name='Combustible' className='NaveMaker__input' onChange={getFormulario}/>
-                <input type='text' placeholder='Nave' value={input.Actividad} name='Actividad' className='NaveMaker__input' onChange={getFormulario}/>
-                <input type='text' placeholder='Nave' value={input.TipoDeNave} name='TipoDeNave' className='NaveMaker__input' onChange={getFormulario}/>
-                <input type='text' placeholder='Nave' value={input.Pais} name='Pais' className='NaveMaker__input' onChange={getFormulario}/>
+                <input type='text' placeholder='Combustible' value={input.Combustible} name='Combustible' className='NaveMaker__input' onChange={getFormulario}/>
+                <input type='text' placeholder='Actividad' value={input.Actividad} name='Actividad' className='NaveMaker__input' onChange={getFormulario}/>
+                <input type='text' placeholder='TipoDeNave' value={input.TipoDeNave} name='TipoDeNave' className='NaveMaker__input' onChange={getFormulario}/>
+                <input type='text' placeholder='Pais' value={input.Pais} name='Pais' className='NaveMaker__input' onChange={getFormulario}/>
                 <button className=''><FontAwesomeIcon icon={solid('circle-check')} /></button>
             </form>
             {

@@ -16,25 +16,25 @@ export class Nave {
     }
 }
 
-class VehiculoLanzadero extends Nave {
-    constructor(nombre, combustible, actividad, tipoDeNave, pais, empuje, peso, transportePeso){
-        super(nombre, combustible, actividad, tipoDeNave, pais)
-        this.empuje = empuje;
-        this.peso = peso;
-        this.transportePeso = transportePeso;
-    }
-}
+// class VehiculoLanzadero extends Nave {
+//     constructor(nombre, combustible, actividad, tipoDeNave, pais, empuje, peso, transportePeso){
+//         super(nombre, combustible, actividad, tipoDeNave, pais)
+//         this.empuje = empuje;
+//         this.peso = peso;
+//         this.transportePeso = transportePeso;
+//     }
+// }
 
-class NaveNoTripulada extends Nave {
-    constructor(nombre, combustible, actividad, tipoDeNave, pais, zona){
-        super(nombre, combustible, actividad, tipoDeNave, pais)
-        this.zona = zona;
-    }
-}
+// class NaveNoTripulada extends Nave {
+//     constructor(nombre, combustible, actividad, tipoDeNave, pais, zona){
+//         super(nombre, combustible, actividad, tipoDeNave, pais)
+//         this.zona = zona;
+//     }
+// }
 
-class NaveTripulada extends Nave {
-    constructor(nombre, combustible, actividad, tipoDeNave, pais, mision){
-        super(nombre, combustible, actividad, tipoDeNave, pais)
-        this.mision = mision;
-    }
-}
+// class NaveTripulada extends Nave {
+//     constructor(nombre, combustible, actividad, tipoDeNave, pais, mision){
+//         super(nombre, combustible, actividad, tipoDeNave, pais)
+//         this.mision = mision;
+//     }
+// }
