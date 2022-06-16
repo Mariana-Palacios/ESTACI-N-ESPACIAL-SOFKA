@@ -163,4 +163,9 @@
 .nave__title, .nave span {
   font-family: "Kdam Thmor Pro", sans-serif;
 }
+
+.NaveMaker {
+  position: relative;
+  z-index: 2;
+}
 /*# sourceMappingURL=index.css.map */
