@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Naves from './Naves';
 import SVGComponent from './SVGComponent';
+import NaveInput from './NaveInput';
+import NaveMaker from './NaveMaker';
 import space_background from "./img/background.svg";
 import {Nave} from './App'
 import './styles/index.css'
-import NaveInput from './NaveInput';
+
 
 
 const saturnoV = new Nave('Saturno V','Queroseno+N(liq)','1967-1973','Vehículo Lanzadera', 'EE.UU');
@@ -31,7 +33,10 @@ function Index() {
         <Naves nave={VeneraIV.nombre} combustible={VeneraIV.combustible} actividad={VeneraIV.actividad} tipoDeNave={VeneraIV.tipoDeNave} pais={VeneraIV.pais}/>
       </div>
       <SVGComponent />
-      <NaveMaker nuevaNave={nuevaNave}/>
+      <NaveInput nuevaNave={nuevaNave}/>
+      {/* {
+        listaNaves.map(e => <NaveMaker  Nave={e} />)
+      } */}
     </div>
   );
 }
