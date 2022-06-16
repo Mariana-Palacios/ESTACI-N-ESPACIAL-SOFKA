@@ -34,9 +34,14 @@ function Index() {
       </div>
       <SVGComponent />
       <NaveInput nuevaNave={nuevaNave}/>
-      {/* {
-        listaNaves.map(e => <NaveMaker  Nave={e} />)
-      } */}
+      <div className='flex'>
+        {
+          listaNaves.map(function(e){
+            return <NaveMaker Nave={e.Nave} Combustible={e.Combustible} Actividad={e.Actividad} TipoDeNave={e.TipoDeNave} Pais={e.Pais}/>
+          })
+        }
+      </div>
+
     </div>
   );
 }

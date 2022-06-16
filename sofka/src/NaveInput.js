@@ -23,8 +23,6 @@ const NaveInput=(props)=>{
         const name = e.target.name
         setInput((preValue)=>{
             if(name === 'Nave'){
-                console.log('prueba')
-                console.log(preValue)
                 return{
                     Nave: value,
                     Combustible: input.Combustible,
@@ -74,8 +72,9 @@ const NaveInput=(props)=>{
         console.log(input.Nave)
         console.log(input.Combustible)
         console.log(input.Actividad)
-        if(input.Nave !== "" || input.Combustible !== "" ||  input.Actividad !== "" ){    
+        if(input.Nave.length !== 0 && input.Combustible.length !== 0 &&  input.Actividad !== 0 ){    
             props.nuevaNave(input)
+            console.log(input)
             setInput({
                 Nave:'',
                 Combustible:'',
